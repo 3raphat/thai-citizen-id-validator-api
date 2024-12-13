@@ -1,0 +1,25 @@
+{
+  "name": "thai-citizen-id-validator-api",
+  "description": "A lightweight, fast API for validating Thai citizen ID numbers.",
+  "version": "1.0.0",
+  "keywords": [
+    "thai-citizen-id",
+    "national-id",
+    "validator",
+    "api"
+  ],
+  "scripts": {
+    "dev": "bun run --watch src/index.ts",
+    "build": "bun build src/index.ts --target bun --outdir ./dist",
+    "start": "NODE_ENV=production bun dist/index.js",
+    "test": "bun test"
+  },
+  "dependencies": {
+    "@elysiajs/swagger": "^1.1.6",
+    "elysia": "^1.1.26"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "module": "src/index.js"
+}
